@@ -86,7 +86,7 @@ function App() {
       formData.append("file", file);
 
       const response = await fetch(
-        "http://localhost:8000/upload",
+        "https://excel-filter-app-1247f0e3.fastapicloud.dev/upload",
         {
           method: "POST",
           body: formData,
