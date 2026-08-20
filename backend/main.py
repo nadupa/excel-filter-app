@@ -12,7 +12,10 @@ app = FastAPI(
 # Allow our React frontend to communicate with FastAPI
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://excel-filter-app.nadupabandara909.workers.dev",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
